@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAyAqppmUaHKC4avlCjLqAjQ0MQd58Dq_I",
+    authDomain: "testreturn-b7182.firebaseapp.com",
+    databaseURL: "https://testreturn-b7182.firebaseio.com",
+    storageBucket: "testreturn-b7182.appspot.com",
+    messagingSenderId: "1083668298120"
+  };
+  firebase.initializeApp(config);
+
+  var dbRef =firebase.database();
+
+   var retu = dbRef.ref('yes');
+      retu.on('value', function(snapshot) {
+        console.log("yes:"+snapshot.val());
+    });
+</script>
+</head>
+<body>
+  <label id="ledroom" class="switch">
+      			<input type="button" onclick="retu.push('0')">
+      			
+    			</label>
+	
+</body>
+</html>
