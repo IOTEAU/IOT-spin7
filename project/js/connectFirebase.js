@@ -1,6 +1,4 @@
 
-
-
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyB2_l8HIycLAdM6a9vA9XMaS_VPqxmBK1o",
@@ -20,14 +18,15 @@ var Airone = db.ref('Airone');
       Airone.on('value', function(snapshot) {
         console.log("Airone:"+snapshot.val());
         var sum = snapshot.val();
-        insertQueue(sum)
-        // document.querySelector("#Airone > input").checked = snapshot.val();
+         // insertQueue(sum)
+         console.log(sum)
+        document.querySelector("#Airone > input").checked = snapshot.val();
 });
 
       var Airtwo = db.ref('Airtwo');
       Airtwo.on('value', function(snapshot) {
         console.log("Airtwo:"+snapshot.val());
-       // document.querySelector("#Airtwo > input").checked = snapshot.val();
+        document.querySelector("#Airtwo > input").checked = snapshot.val();
 });
       var Current = db.ref('Current');
       Current.on('value', function(snapshot) {
