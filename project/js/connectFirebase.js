@@ -20,6 +20,7 @@ var Airone = db.ref('Airone');
         var sum = snapshot.val();
          // insertQueue(sum)
          console.log(sum)
+         stac.push(sum)
         document.querySelector("#Airone > input").checked = snapshot.val();
 });
 
@@ -73,25 +74,25 @@ console.log(runAirtwo);
 
 
 var stac = new Array();
-var getArray = []
-console.log(getArray)
+// var getArray = []
+console.log(stac)
 
 
 
 
-function insertQueue(item){
-    for (var i = 0; i < item.length; i++) {
-      inQueue(item[i])
-       }
+// function insertQueue(item){
+//     for (var i = 0; i < item.length; i++) {
+//       inQueue(item[i])
+//        }
 
-    }
+//     }
 
-function inQueue(data){
+// function inQueue(data){
 
 
-     stac.push(data)
+//      stac.push(data)
 
-    }
+//     }
 
     chackDataQueue(stac)
 
