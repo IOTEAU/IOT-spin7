@@ -1,7 +1,7 @@
 
 
  var stac = new Array();
-var getArray = [runAirone,runAirtwo]
+var getArray = []
 console.log(getArray)
 
 
