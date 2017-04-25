@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+
+
+    <script src="https://www.gstatic.com/firebasejs/3.8.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyB2_l8HIycLAdM6a9vA9XMaS_VPqxmBK1o",
+            authDomain: "datacontro.firebaseapp.com",
+            databaseURL: "https://datacontro.firebaseio.com",
+            storageBucket: "datacontro.appspot.com",
+            messagingSenderId: "585589132177"
+        };
+        firebase.initializeApp(config);
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="js/jquery-3.2.0.min.js"></script>-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+
+    <title>หน้าหลัก</title>
+</head>
+
+<body>
+
+
+    <!--<div class="container-fludid">
+
+        <div class=".container-fluid">
+
+            <div class="row">
+
+
+                <div class="col-sm-2 well">-->
+
+
+    <div class="from">
+        <!--<form role="form">-->
+        <div class="well">
+            <div class="login-from">
+                <div class="tab-content">
+                    <div id="login-tab" class="tab-from-group">
+                        <form >
+                        <div class="form-group">
+                            <h3>Log In</h3>
+                            <label for="txt_email">Username</label>
+                            <input type="email" class="form-control" id="txt-email" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="txt_pass">Password</label>
+                            <input type="password" class="form-control" id="txt-pass" placeholder="Password">
+                        </div>
+                        </form>
+                    </div>
+                    <div id="logout-tap"  class="tab-from-group" style="display: none;">
+                        <div class="form-group">
+                            <h3>Log Out</h3>
+                            <h2 id="user-data"></h2>
+                        </div>
+                    </div>
+                </div>
+                <button id="id-button" type="sign in" class="btn btn-default" onclick="check(this.BtnLogIn)">เข้าสู่ระบบ</button>
+            </div>
+        </div>
+        <!--</form>-->
+
+    </div>
+
+
+    <!--<div class="well">
+                        <h3>
+                            กรุณาเลือกตึก
+                            <hr>
+                        </h3>
+                        <p>
+                            <a href="#">C</a>
+                        </p>
+                        <p>
+                            <a href="#">S</a>
+                        </p>
+                        <p>
+                            <a href="#">M</a>
+                        </p>
+
+
+                    </div>
+
+
+                    <div class="well" </div>
+                        <h3>ตารางการใช้ห้องเรียน
+                            <hr>
+                        </h3>
+                    </div>
+                </div>
+
+
+
+
+                <div class="container-fludid">
+                    <div class="row">
+                        <div class="col-md-7 ">
+                            <div class="well">
+                                <center>
+                                    <h4>ตึก S</h4>
+                                    <hr>
+                                </center>
+                            </div>
+
+
+
+                            <div class="container-fludid">
+                                <div class="row">
+                                    <div class="col-md-12">
+
+
+                                        <div class="well">
+
+
+                                            <h4>ตึก S </h4>
+                                            <hr>
+                                            <div class="row">
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S101</h4>
+                                                        <hr> แสงสว่าง
+
+
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40"></right>
+                                                        <br><br> เครื่องปรับอากาศ
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S102</h4>
+                                                        <hr> แสงสว่าง
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
+                                                        <br><br> เครื่องปรับอากาศ
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S103</h4>
+                                                        <hr> แสงสว่าง</h4>
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
+                                                        <br><br> เครื่องปรับอากาศ
+                                                        <img id="icon icons8-Rectangle-Stroked" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAiklEQVRYR+2YsQ2AMAwEk7GYgJUYgZWYIGOBggQVVQ5LRhwdxTnvy1epJflXk+crBqQ39A2D89p2umkEvy1TPQ32gP0n4pDRmVcmA2pw1ADl7KAGqQHK20ENUgOUt4MapAYobwc1SA1Q3g5qkBqgvB38n0G6cQR/Px5FDH9rZqoXraelDEivOr3BA0tE6CnHhDHoAAAAAElFTkSuQmCC"
+                                                            width="60" height="40">
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S104</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S105</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S106</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S107</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S108</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <div class="well">
+                                                        <h4>S109</h4>
+                                                        <hr> แสงสว่าง
+                                                        <br><br> เครื่องปรับอากาศ
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="container-fludid">
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>-->
+
+    <!--<script src="project/js/jquery-3.2.0.min.js"></script>-->
+    <!--<script src="project/js/bootstrap.min.js"></script>-->
+
+
+    <!--<script src="js/jquery-3.2.0.min.js"></script>-->
+    <!--<script src="js/bootstrap.min.js"></script>-->
+
+    <script src="js/connectFirebase.js"></script>
+    <script src="js/login.js"></script>
+
+
+</body>
+
+</html>
