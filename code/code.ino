@@ -9,7 +9,8 @@ int led3 = D4;
 int led4 = D5;
 int led5 = D6;
 
-int count = 0;
+//int data = [];
+int count =0;
 
 //config firebas
 #define FIREBASE_HOST "testqueue-aaa05.firebaseio.com"
@@ -54,6 +55,7 @@ digitalWrite(led4,HIGH);
 
   Firebase.begin(FIREBASE_HOST,FIREBASE_AUTH);
   Firebase.set("num2",0);
+  Firebase.set("num",0);
 
 
 
@@ -83,22 +85,19 @@ void loop(){
  }
 
   
-delay(500);  
+delay(200);  
 }
 
 
 void counting(){
  state=digitalRead(led);
   state1=digitalRead(led5);
- 
-  if(state == LOW  ){
+
+  
+  if(state == LOW){
     count++;
-// Serial.println(count);
-    
- 
-  }else if(state1 == LOW){
-    count--;
   }
+  
   Firebase.set("num2",count);
  
   
