@@ -103,7 +103,7 @@
                                                         <li class="previous">
                                                             <a href="page1.html" onclick="mySlide('previous');"> <span aria-hidden="true">&larr;</span> ย้อนกลับ</a>
                                                         </li>
-                                                        <li class="next"><a href="page3.html" onclick="mySlide('next');"><span aria-hidden="true">&rarr;</span>ถัดไป</a></li>
+                                                        <li class="next"><a href="page3.html" onclick="mySlide('next');">ถัดไป<span aria-hidden="true">&rarr;</span></a></li>
 
 
 
@@ -111,58 +111,40 @@
                                                             <h4 id="room">ห้อง S102 </h4>
                                                         </center>
 
-                                                        <hr>
                                                         <div class="row">
+                                                            <div id="container" style="min-width: 250px; height: 300px; margin: 0 auto">
 
+                                                                <script src="js/highcharts.js" src="connectFirebase.js">
+                                                                    document.write('Highcharts');
+                                                                    document.write('current');
+                                                                </script>
+
+                                                            </div>
+
+                                                            <hr>
 
                                                             <div class="col-lg-4">
                                                                 <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Very_Basic/idea-100.png" title="Idea" width="100">
-                                                                <h4>แสงสว่าง</h4>
-
+                                                                <h4>แสงสว่าง</h4><br>
                                                                 <!--toggle button-->
                                                                 <label class="switch" id="Light_Row_one">
-                                                            <input onclick="Light_Row_one.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div></label><br>แถวที่ 1<br>
-
-                                                                <label class="switch" id="Light_Row_two">
-
-                                                            <input onclick="Light_Row_two.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div></label><br>แถวที่ 2<br>
-
-                                                                <label class="switch" id="Light_Row_three">
-                                                            <input onclick="Light_Row_three.set(+this.checked)" type="checkbox" checked><div class="slider round"></div></label><br>แถวที่3<br>
-
+                                                            <input onclick="Light_Row_one.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div></label><br>
                                                             </div>
                                                             <img src="https://maxcdn.icons8.com/iOS7/PNG/100/Household/air_conditioner-100.png" title="Air Conditioner" width="100">
-                                                            <h4>เครื่องปรับอากาศ</h4>
 
+                                                            <h4>เครื่องปรับอากาศ</h4>
+                                                            <br>
                                                             <!--toggle button-->
 
                                                             <label class="switch" id="Airone">
-                                                                    <input onclick="Airone.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div> </label><br>ตัวที่ 1<br>
-
-                                                            <label class="switch" id="Airtwo">
-                                                                    <input onclick="Airtwo.set(+this.checked)" type="checkbox" checked><div class="slider round"></div> </label><br>ตัวที่ 2<br>
-
-                                                        </div>
-                                                        <hr>
-
-
-
-
-
-
-
-
-                                                        <h1>กำลังใช้งานไฟฟ้าในขณะนี้</h1>
-                                                        <div id="container" style="min-width: 250px; height: 300px; margin: 0 auto">
-
-                                                            <script src="js/highcharts.js">
-                                                                document.write('Highcharts');
-                                                            </script>
+                                                                    <input onclick="Airone.set(+this.checked)"  type="checkbox" checked><div class="slider round"></div> </label><br>
 
 
                                                         </div>
 
                                                     </div>
+
+
                                         </div>
 
                                     </div>
