@@ -11,6 +11,7 @@
 
         document.getElementById('id-button').textContent = "ออกจากระบบ"
 
+
         var checkStatusText = document.querySelectorAll(".col-md-3");
         checkStatusText[0].onclick = function () { checkStatus() };
         function checkStatus() {
@@ -43,7 +44,7 @@
             checkStatusText[3].innerHTML = page4;
 
         }
- 
+
 
 
     } else {
@@ -63,8 +64,13 @@
 function check(BtnLogIn) {
 
     if (firebase.auth().currentUser) {
+        var index = location.href = "index.html"
+        document.getElementById('id-button').innerHTML = index
         firebase.auth().signOut();
         document.getElementById("myForm").reset();
+        
+
+
 
     }
 
