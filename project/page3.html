@@ -31,32 +31,41 @@
 
 
 
-    <div class="container">
+    </div>
 
+    <div class="container">
         <div class="container-fluid">
             <div class="row">
-
-
                 <div class="col-sm-3 well">
-
-
-
-                    <form role="form">
+                    <div class="from">
                         <div class="well">
-                            <div class="form-group">
-                                <h3>Login
-                                    <hr>
-                                </h3>
-                                <label for="txt_email">Username</label>
-                                <input type="email" class="form-control" id="txt_email" placeholder="Enter email">
+                            <div class="login-from">
+                                <div class="tab-content">
+                                    <div id="login-tab" class="tab-from-group">
+                                        <form>
+                                            <div class="form-group">
+                                                <h3>Log In</h3>
+                                                <label for="txt_email">Username</label>
+                                                <input type="email" class="form-control" id="txt-email" placeholder="Enter email">
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="txt_pass">Password</label>
+                                                <input type="password" class="form-control" id="txt-pass" placeholder="Password">
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div id="logout-tap" class="tab-from-group" style="display: none;">
+                                        <div class="form-group">
+                                            <h3>Log Out</h3>
+                                            <h2 id="user-data"></h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button id="id-button" type="sign in" class="btn btn-default" onclick="check(this.BtnLogIn)">เข้าสู่ระบบ</button>
                             </div>
-                            <div class="form-group">
-                                <label for="txt_pass">Password</label>
-                                <input type="password" class="form-control" id="txt_pass" placeholder="Password">
-                            </div>
-                            <button type="sign in" class="btn btn-default">เข้าสู่ระบบ</button>
                         </div>
-                    </form>
+                    </div>
+
 
 
                     <div class="well">
@@ -79,7 +88,7 @@
 
 
                     <div class="well" </div>
-                        
+
                     </div>
                 </div>
 
@@ -163,7 +172,7 @@
                     <script src="js/bootstrap.min.js"></script>
                     <script src="js/connectFirebase.js"></script>
 
-
+                    <script src="js/login.js"></script>
 
 </body>
 
