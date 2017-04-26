@@ -9,8 +9,41 @@
 
         document.getElementById('user-data').innerHTML = user.email;
 
-        // window.location.assign("page2.html");
         document.getElementById('id-button').textContent = "ออกจากระบบ"
+
+        var checkStatusText = document.querySelectorAll(".col-md-3");
+        checkStatusText[0].onclick = function () { checkStatus() };
+        function checkStatus() {
+            var page1 = location.href = "page1.html"
+            var checkStatusText = document.querySelectorAll(".col-md-3");
+            checkStatusText[0].innerHTML = page1;
+
+        }
+        var checkStatusText = document.querySelectorAll(".col-md-3");
+        checkStatusText[1].onclick = function () { checkStatus() };
+        function checkStatus() {
+            var page2 = location.href = "page2.html"
+            var checkStatusText = document.querySelectorAll(".col-md-3");
+            checkStatusText[1].innerHTML = page2;
+
+        }
+        var checkStatusText = document.querySelectorAll(".col-md-3");
+        checkStatusText[2].onclick = function () { checkStatus() };
+        function checkStatus() {
+            var page3 = location.href = "page3.html"
+            var checkStatusText = document.querySelectorAll(".col-md-3");
+            checkStatusText[2].innerHTML = page3;
+
+        }
+        var checkStatusText = document.querySelectorAll(".col-md-3");
+        checkStatusText[3].onclick = function () { checkStatus() };
+        function checkStatus() {
+            var page4 = location.href = "page4.html"
+            var checkStatusText = document.querySelectorAll(".col-md-3");
+            checkStatusText[3].innerHTML = page4;
+
+        }
+ 
 
 
     } else {
@@ -20,6 +53,7 @@
 
         var x = document.querySelectorAll(".tab-from-group");
         x[0].style.display = "block";
+
     }
 
 
@@ -39,18 +73,18 @@ function check(BtnLogIn) {
 
     firebase.auth().signInWithEmailAndPassword(email, password)
 
-    .catch(function(err) {
-        // Handle Errors here.
-        var errorCode = err.code;
-        var errorMessage = err.message;
+        .catch(function (err) {
+            // Handle Errors here.
+            var errorCode = err.code;
+            var errorMessage = err.message;
 
-        if (errorCode == 'auth/wrong-password') {
-            alert('Wrong password.');
-        } else {
-            alert(errorMessage);
-        }
-        return;
-    });
+            if (errorCode == 'auth/wrong-password') {
+                alert('Wrong password.');
+            } else {
+                alert(errorMessage);
+            }
+            return;
+        });
 
 
 
