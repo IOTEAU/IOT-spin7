@@ -1,37 +1,35 @@
-
-
- var stac = new Array();
-var getArray = []
+var stac = new Array();
+var getArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(getArray)
 
 
 insertQueue(getArray)
 
-function insertQueue(item){
+function insertQueue(item) {
     for (var i = 0; i < item.length; i++) {
-      inQueue(item[i])
-       }
-
+        inQueue(item[i])
     }
 
-function inQueue(data){
+}
+
+function inQueue(data) {
 
 
-     stac.push(data)
+    stac.push(data)
 
-    }
+}
 
-    chackDataQueue(stac)
+chackDataQueue(stac)
 
 
 
-function chackDataQueue(dataQueue){
+function chackDataQueue(dataQueue) {
 
     if (dataQueue.length <= 1) {
 
-       outQueue()
+        outQueue()
 
-    }else{
+    } else {
 
         timeOut()
 
@@ -39,25 +37,28 @@ function chackDataQueue(dataQueue){
 
 }
 
-function outQueue(){
+function outQueue() {
 
-    while(!isEmpty()){
-        console.log('out  ='+ stac.shift())
+    while (!isEmpty()) {
+        console.log('out  =' + stac.shift())
 
     }
 
 }
 
-function isEmpty(){
-    return 0==stac.length
+function isEmpty() {
+    return 0 == stac.length
 }
 
-function timeOut(){
-	// while(!isEmpty()){
-  setInterval(function() { 
-  	stac2 = stac.shift(); 
+function timeOut() {
+    // while(!isEmpty()){
+    console.log(stac.shift(0));
+    setInterval(function() {
+        stac2 = stac.shift();
 
-	console.log(stac2);
-  }, 3000)
-   // }
+        console.log(stac2);
+    }, 3000)
+
+    // }
+
 }
