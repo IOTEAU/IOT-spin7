@@ -22,7 +22,7 @@
             document.getElementById('room').textContent = "ห้อง S101";
 
 
-        }
+        };
         var checkStatusText = document.querySelectorAll(".col-md-3");
         checkStatusText[1].onclick = function () { checkStatus() };
         function checkStatus() {
@@ -32,7 +32,7 @@
             x[1].style.display = "block";
             document.getElementById('room').textContent = "ห้อง S102";
 
-        }
+        };
         var checkStatusText = document.querySelectorAll(".col-md-3");
         checkStatusText[2].onclick = function () { checkStatus() };
         function checkStatus() {
@@ -42,7 +42,7 @@
             x[1].style.display = "block";
             document.getElementById('room').textContent = "ห้อง S103";
 
-        }
+        };
         var checkStatusText = document.querySelectorAll(".col-md-3");
         checkStatusText[3].onclick = function () { checkStatus() };
         function checkStatus() {
@@ -50,9 +50,9 @@
             x[0].style.display = "none";
             var x = document.querySelectorAll("#well-id");
             x[1].style.display = "block";
-            document.getElementById('room').textContent = "ห้อง S104";
+            document.getElementById('room').textContent = "ห้อง S106";
 
-        }
+        };
 
 
 
