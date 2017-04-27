@@ -13,44 +13,47 @@
 
 
         var checkStatusText = document.querySelectorAll(".col-md-3");
-        checkStatusText[0].onclick = function () { checkStatus() };
-        function checkStatus() {
+        checkStatusText[0].onclick = function () { checkStatus1() };
+        function checkStatus1() {
             var x = document.querySelectorAll("#well-id");
             x[0].style.display = "none";
             var x = document.querySelectorAll("#well-id");
             x[1].style.display = "block";
-            document.getElementById('room').textContent = "ห้อง S101";
-
-
-        };
-        var checkStatusText = document.querySelectorAll(".col-md-3");
-        checkStatusText[1].onclick = function () { checkStatus() };
-        function checkStatus() {
-            var x = document.querySelectorAll("#well-id");
-            x[0].style.display = "none";
-            var x = document.querySelectorAll("#well-id");
-            x[1].style.display = "block";
-            document.getElementById('room').textContent = "ห้อง S102";
+            // document.getElementById('room').textContent = "ห้อง S101";
+            
 
         };
         var checkStatusText = document.querySelectorAll(".col-md-3");
-        checkStatusText[2].onclick = function () { checkStatus() };
-        function checkStatus() {
+        checkStatusText[1].onclick = function () { checkStatus2() };
+        function checkStatus2() {
             var x = document.querySelectorAll("#well-id");
             x[0].style.display = "none";
             var x = document.querySelectorAll("#well-id");
             x[1].style.display = "block";
-            document.getElementById('room').textContent = "ห้อง S103";
+            var x = document.querySelectorAll('#room');
+            x[0].textContent = "ห้อง S102";
 
         };
         var checkStatusText = document.querySelectorAll(".col-md-3");
-        checkStatusText[3].onclick = function () { checkStatus() };
-        function checkStatus() {
+        checkStatusText[2].onclick = function () { checkStatus3() };
+        function checkStatus3() {
             var x = document.querySelectorAll("#well-id");
             x[0].style.display = "none";
             var x = document.querySelectorAll("#well-id");
             x[1].style.display = "block";
-            document.getElementById('room').textContent = "ห้อง S106";
+            // var x = document.querySelectorAll('.room');
+            // x[0].textContent = "ห้อง S103";
+
+        };
+        var checkStatusText = document.querySelectorAll(".col-md-3");
+        checkStatusText[3].onclick = function () { checkStatus4() };
+        function checkStatus4() {
+            var x = document.querySelectorAll("#well-id");
+            x[0].style.display = "none";
+            var x = document.querySelectorAll("#well-id");
+            x[1].style.display = "block";
+            // var x = document.querySelectorAll('.room');
+            // x[0].textContent = "ห้อง S104";
 
         };
 
